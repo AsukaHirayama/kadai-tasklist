@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Message;
+
 class MessagesController extends Controller
 {
     /**
@@ -16,7 +18,7 @@ class MessagesController extends Controller
         $messages = Message::all();
 
         return view('messages.index', [
-            'test' => $messages, 
+            'messages' => $messages, 
             ]);
     }
 
