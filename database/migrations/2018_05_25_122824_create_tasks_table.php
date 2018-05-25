@@ -30,6 +30,3 @@ class CreateTasksTable extends Migration
         Schema::dropIfExists('tasks');
     }
 }
-
-App\tasks::where('id', 1)->update(['content' => 'updated'])
-
